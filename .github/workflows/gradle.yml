@@ -14,7 +14,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      working-directory: ./actiondemo/complete
+      working-directory: ./complete
 
     steps:
     - uses: actions/checkout@v2
@@ -25,6 +25,6 @@ jobs:
     - name: dir listing
       run: ls -lrt
     - name: Grant execute permission for gradlew
-      run: chmod +x ./actiondemo/complete/gradlew
+      run: chmod +x ./complete/gradlew
     - name: Build with Gradle
-      run: ./actiondemo/complete/gradlew build
+      run: ./complete/gradlew build
